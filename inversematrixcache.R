@@ -1,5 +1,9 @@
 
+# ProgrammingAssignmentNo2
 
+## A pair of functions that cashes the inverse of a matrix.
+
+## Creates a "matrix" object that can cache its inverse
 
 makechachematrix <- function(x = matrix()) {  ## set the value of the matrix
   m <- NULL
@@ -16,6 +20,11 @@ makechachematrix <- function(x = matrix()) {  ## set the value of the matrix
 }
 
 -----------------------------------------
+
+## This function computes the inverse of the special "matrix" 
+## makechachematrix above. If the inverse has already been calculated (and the 
+## matrix has not changed), then it should retrieve the inverse from the cache.
+## This function computes the inverse of the special "matrix" returned by makeCacheMatrix above.
   
   cachematrix <- function(x, ...) {
     m <- x$getinverse()
